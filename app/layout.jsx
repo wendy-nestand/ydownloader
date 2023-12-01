@@ -1,4 +1,8 @@
-import './globals.css'
+import "./globals.css";
+export const metadata = {
+  title: "Youtube Downloader",
+  description: "Download and convert youtube video",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -10,5 +14,5 @@ export default function RootLayout({ children }) {
       <head />
       <body>{children}</body>
     </html>
-  )
+  );
 }
