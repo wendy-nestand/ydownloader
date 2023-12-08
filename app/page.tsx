@@ -86,15 +86,20 @@ export default function Home() {
   const [showSelection, setshowSelection] = useState(false);
 
   const handleDownload = async () => {
-    try {
-      const res = await axios.get(`/api/downloader?url=${videoUrl}`);
-
-      await downloadPostVideo(videoUrl);
-
-      setfinalLink(res.data.format.url);
-      setshowSelection(true);
-    } catch (error) {
-      console.log(error);
+    if (videoUrl.includes("www.youtube.com")) {
+      try {
+        const res = await axios.get(`/api/downloader?url=${videoUrl}`);
+        setfinalLink(res.data.format.url);
+        setshowSelection(true);
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      try {
+        await downloadPostVideo(videoUrl);
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -104,7 +109,7 @@ export default function Home() {
       <header className=" flex justify-between mx-auto mx-w-6xl py-4 "></header>
       <div className="flex flex-col rounded-md  items-center min-h-[450px] justify-center ">
         <h3 className="text-xl font-semibold tracking-wider ">
-          Youtube Video Downloader
+          Social Media Video Downloader
         </h3>
         <div className="mt-4 space-x-2 w-full p-4 flex justify-center">
           <input
