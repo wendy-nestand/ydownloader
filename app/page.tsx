@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { Inter } from "@next/font/google";
 import { useState } from "react";
 import axios from "axios";
@@ -105,7 +105,6 @@ export default function Home() {
 
   return (
     <main className="mx-auto md:max-w-6xl px-4">
-      <div></div>
       <header className=" flex justify-between mx-auto mx-w-6xl py-4 "></header>
       <div className="flex flex-col rounded-md  items-center min-h-[450px] justify-center ">
         <h3 className="text-xl font-semibold tracking-wider ">
