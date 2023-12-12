@@ -5,6 +5,12 @@ export const mainMetadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
+    "Youtube video download",
+    "tube video downloader",
+    "Save Instagram videos",
+    "Download IG videos",
+    "Youtube video saver",
+    "Online Youtube downloader",
     "Instagram video download",
     "IG video downloader",
     "Save Instagram videos",
@@ -13,13 +19,13 @@ export const mainMetadata: Metadata = {
     "Online Instagram downloader",
     "Reels downloader",
   ],
-  authors: [
-    {
-      name: "riad-azz",
-      url: "https://github.com/riad-azz",
-    },
-  ],
-  creator: "riad-azz",
+  // authors: [
+  //   {
+  //     name: "riad-azz",
+  //     url: "https://github.com/riad-azz",
+  //   },
+  // ],
+  // creator: "riad-azz",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -36,13 +42,13 @@ export const mainMetadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [siteConfig.ogImageUrl],
-    creator: "@riadazz",
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: siteConfig.name,
+  //   description: siteConfig.description,
+  //   images: [siteConfig.ogImageUrl],
+  //   creator: "@riadazz",
+  // },
   robots: {
     index: false,
     follow: true,
