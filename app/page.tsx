@@ -122,7 +122,7 @@ export default function Home() {
             className="border rounded-md py-1 px-4 bg-lime-500 font-semibold shadow-md"
             onClick={handleDownload}
           >
-            Convert
+            Download
           </button>
         </div>
       </div>
